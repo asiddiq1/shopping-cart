@@ -1,44 +1,16 @@
 
 
-/* .test{
-    color: red;
-} */
 
 .main-content{
     display: flex;
-    /* width: 10rem; */
-    /* margin-top: 1rem; */
-    /* border: 2px solid orange; */
     color: white;
     padding: 5rem 1rem;
     width: 100%;
     position: relative;
     z-index: 1;
-
-    /* padding: 0.5rem 3rem; */
-    /* padding-left: 2rem;
-    padding-right: 5rem; */
-/*     
-    padding-left: 3rem;
-    padding-right: 3rem; */
     overflow: hidden;
-    /* gap: 10rem; */
-    /* width: 100%; */
 }
-/* .game-content-main-container{
-    position: relative;
-} */
 
-
-/* .sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    font-size: 1.2rem;
-}
 
 
 .sidebar{
@@ -49,15 +21,7 @@
 .game-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    /* width: 100%; */
-    /* border: 1px solid red; */
-    
-    /* width: 100%; */
-    /* padding: 2rem; */
-    /* padding: 3rem 5rem 3rem 0; */
-    /* border: 2px solid red; */
-    
+    gap: 15px;    
 }
 
 .content-container{
@@ -127,67 +91,3 @@
     }
 }
 
-/* .card{
-    border-radius: 15px;
-    background-color: rgb(37, 36, 36);
-
-}
-
-img{
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    overflow: hidden;
-    object-position: top;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-
-.card-info{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.add-and-price{
-    display: flex;
-    justify-content: space-between;
-    color: grey;
-}
-
-.addBtn{
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    color: grey;
-    
-}
-
-.platforms ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 5px;
-
-}
-
-.game-name{
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-
-.platform{
-    width: 1rem;
-    height: 1rem;
-}
-
-.platform-container{
-    display: flex;
-    gap: 5px;
-} */

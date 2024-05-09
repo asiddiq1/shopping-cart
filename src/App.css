@@ -150,16 +150,24 @@ main {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 850px){
   main{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 3rem;
   }
   .info-container{
     width: 100%;
+    padding: 1rem 2rem;
   }
   .info{
     width: 100%;
+  }
+  .header3{
+    font-size: 1.2rem;
+  }
+  .website-summary{
+    font-size: 0.7rem;
   }
 }

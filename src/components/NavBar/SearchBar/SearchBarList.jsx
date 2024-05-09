@@ -4,11 +4,6 @@ import './SearchBar.css'
 
 function SearchBarList({searchItems, loading, error}){
 
-    // const match = window.location.pathname;
-    // console.log(match);
-    // const basePath = match == '/shop' ? '/games/game' : '/shop/games/game';
-
-
     return (
         searchItems.length > 0 && (loading ? (
             <div className='loading'>
