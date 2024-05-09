@@ -11,7 +11,7 @@ function DropDown(){
     function handleDropdownChange(event) {
       const selectedValue = event.target.value;
       if (selectedValue == "all-games"){
-        navigateTo("/shop/all-games");
+        navigateTo("/shop/games");
       }
       else if (selectedValue === "last-30-days") {
         navigateTo("/shop/last-30-days");
@@ -48,7 +48,10 @@ function DropDown(){
     return (
         <div className="dropdown">
             <select name="games" id="game-dropdown" onChange={handleDropdownChange}>
-                <option value="all-games">All Games</option>
+                <option selected disabled>Section</option>
+                <optgroup label="All Games">
+                  <option value="all-games">All Games</option>
+                </optgroup>
                 <optgroup label="New Releases">
                     <option value="last-30-days">Last 30 Days</option>
                     <option value="this-week">This Week</option>

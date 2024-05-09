@@ -16,22 +16,18 @@ function AddToCart({className, gameId, gameName, gamePrice, gameImg}){
     }, [])
 
     const handleAdded = (event) => {
-        console.log(gameId);
         event.preventDefault();
         
         const inCart = cartItems.some(item => item.gameId === gameId)
         if (!isAdded && !inCart){
-            console.log("checks here");
             addToCart(gameId, gameName, gamePrice, gameImg);
         }
         else if (isAdded){
             addToCart(gameId, gameName, gamePrice, gameImg);
-            console.log(cartItems);
             setIsAdded(!isAdded);
         }
         else{
             removeFromCart(gameId);
-            console.log(cartItems);
             setIsAdded(!isAdded);
 
         }

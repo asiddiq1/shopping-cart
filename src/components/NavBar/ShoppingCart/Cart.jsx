@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 function Cart(){
     const {cartItems, subTotal, removeFromCart, clearCart} = useContext(ShopContext);
 
+    console.log(subTotal);
+
 
     return (
         <div className="checkout-container"> 
@@ -33,9 +35,10 @@ function Cart(){
                         <div className="checkout-cart-header">
                             <div className="checkout-cartLength">{cartItems.length === 0 ? 'Your shopping cart is empty': `Items in cart: ${cartItems.length}`}</div>
                         </div> 
-                        { subTotal > 0 && <div className="subtotal-checkout">Subtotal: ${subTotal.toFixed(2)}</div> &&
+                        { subTotal > 0 && (
+                        <div className="subtotal-checkout">Subtotal: ${subTotal.toFixed(2)} 
                         <Link to="/shop/checkout"><button onClick={() => clearCart()}className="checkout-btn">Checkout</button></Link>
-                        }
+                        </div>)}
                     </div>
 
                   

@@ -11,8 +11,6 @@ import { Link } from "react-router-dom";
 
 library.add(faCartShopping)
 
-
-
 function NavBar() {
 
     const {cartItems} = useContext(ShopContext);
@@ -32,7 +30,6 @@ function NavBar() {
         hoverTimeout = setTimeout(() => {
             setShoppingHover(false);
         }, 300); 
-        // setShoppingHover(false);
     };
     
     return (

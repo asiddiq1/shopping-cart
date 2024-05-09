@@ -16,7 +16,7 @@
 .sidebar{
     width: 24%;
     padding: 1rem;
-} */
+} 
 
 .game-container{
     display: grid;
@@ -86,7 +86,9 @@
 @media (max-width: 550px){
 
     .game-container{
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+        gap: 0.5rem;
 
     }
 }

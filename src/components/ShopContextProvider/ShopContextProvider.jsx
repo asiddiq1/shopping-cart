@@ -16,7 +16,6 @@ function ShopContextProvider({children}){
     useEffect(() => {
         const storedCartItems = localStorage.getItem('cartItems');
         const storedSubTotal = localStorage.getItem('subTotal');
-        console.log("load Stored Items");
         if (storedCartItems){
             setCartItems(JSON.parse(storedCartItems));
         }

@@ -31,8 +31,6 @@ function useFetchGames({startDate, endDate, ordering, page}) {
         if (page){
             res += `&page=${page}`;
         }
-        
-    
         return url + res;
     
     }
@@ -41,7 +39,6 @@ function useFetchGames({startDate, endDate, ordering, page}) {
       try {
         setLoading(true);
         const apiUrl = getUrl();
-        console.log(apiUrl);
         const response = await fetch(apiUrl, { mode: 'cors' }); 
         if (!response.ok) {
             if (response.status === 404) {
@@ -63,7 +60,6 @@ function useFetchGames({startDate, endDate, ordering, page}) {
           platforms: getPlatforms(game.platforms.map(platform => platform.platform.slug))
         }));
         setGames(prevGames => page > 1 ? [...prevGames, ...newGames] : newGames);
-        console.log(games);
         setHasMore(newGames.length > 0);
       } catch (error) {
         setError("A network error has occurred");
