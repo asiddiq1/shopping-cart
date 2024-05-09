@@ -121,3 +121,19 @@
 
     }
 }
+
+@media (max-width: 429px){
+    .checkout-cartImg{
+        width: 75px;
+        height: 75px;
+    }
+    .cartItem-name{
+        font-size: 0.8rem;
+    }
+    .checkout-removeItem{
+        width: 15px;
+        height: 15px;
+    }
+
+    
+}

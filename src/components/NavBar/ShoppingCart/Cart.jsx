@@ -8,12 +8,7 @@ function Cart(){
 
 
     return (
-        <div className="checkout-container">
-                {/* <div className="checkout-cart-header">
-                    <div className="cartLength">{cartItems.length === 0 ? 'Your shopping cart is empty': `Items in cart: ${cartItems.length}`}</div>
-                </div>  */}
-                
-                
+        <div className="checkout-container"> 
                 {subTotal > 0 &&
                 <div className="checkout-cartItems">
                     {cartItems.map((item, index) => (
@@ -38,9 +33,9 @@ function Cart(){
                         <div className="checkout-cart-header">
                             <div className="checkout-cartLength">{cartItems.length === 0 ? 'Your shopping cart is empty': `Items in cart: ${cartItems.length}`}</div>
                         </div> 
-                        <div className="subtotal-checkout">Subtotal: ${subTotal.toFixed(2)}</div>
+                        { subTotal > 0 && <div className="subtotal-checkout">Subtotal: ${subTotal.toFixed(2)}</div> &&
                         <Link to="/shop/checkout"><button onClick={() => clearCart()}className="checkout-btn">Checkout</button></Link>
-                     
+                        }
                     </div>
 
                   

@@ -36,7 +36,7 @@ function CartSidePanel({isOpen, mouseOut, mouseOver, path}){
                     <div className="subtotal">{ subTotal > 0  && `Subtotal: ${subTotal.toFixed(2)}`}</div>
                     <button className="return-shopping" onClick={mouseOut}>Return to shopping</button>
                     {subTotal > 0 && 
-                    <Link to="/shop/cart"><button className="view-cart">View Cart</button></Link>}
+                    <Link to="/shop/cart"><button onClick={mouseOut} className="view-cart">View Cart</button></Link>}
                 </div>
 
             </div>
