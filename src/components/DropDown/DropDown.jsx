@@ -47,8 +47,8 @@ function DropDown(){
 
     return (
         <div className="dropdown">
-            <select name="games" id="game-dropdown" onChange={handleDropdownChange}>
-                <option selected disabled>Section</option>
+            <select name="games" id="game-dropdown" defaultValue={'DEFAULT'} onChange={handleDropdownChange}>
+                <option value="DEFAULT" disabled>Section</option>
                 <optgroup label="All Games">
                   <option value="all-games">All Games</option>
                 </optgroup>

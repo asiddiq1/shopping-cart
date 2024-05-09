@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 function Cart(){
     const {cartItems, subTotal, removeFromCart, clearCart} = useContext(ShopContext);
 
-    console.log(subTotal);
-
-
     return (
         <div className="checkout-container"> 
                 {subTotal > 0 &&

@@ -154,7 +154,7 @@ main {
   main{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 3rem;
   }
   .info-container{
