@@ -122,6 +122,10 @@
     }
 }
 
+.checkout-removeItem svg{
+    fill: white;
+}
+
 @media (max-width: 429px){
     .checkout-cartImg{
         width: 75px;
