@@ -29,7 +29,7 @@ function BestofYear(){
 
 
   return(
-    <GridContent loading={loading} error={error} games={games} page={page} hasMore={hasMore} title="Best of Year"/>);
+    <GridContent loading={loading} error={error} games={games} page={page} hasMore={hasMore} title="Best of the Year"/>);
 }
 
 export default BestofYear;
