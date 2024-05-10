@@ -158,7 +158,7 @@ function GamePage() {
                         </div>
                 </div>
                 <div className="game-additional-info">
-                    <br/>
+                    {/* <br/> */}
                     {game.platforms && game.platforms.length > 0 && <div className="game-page-platforms">
                         <div className="platform-tile header">Platforms</div>
                         <div className="platform-types">

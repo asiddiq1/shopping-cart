@@ -1,7 +1,7 @@
 
 .image-slider-container{
     height:  250px;
-    max-width: 850px;
+    /* max-width: 850px; */
     border-radius: 10px;
     display: flex;
     margin: 0 auto;
@@ -48,7 +48,7 @@
 
 @media (max-width: 1000px){
     .image-slider-container{
-        max-width: 400px;
+        /* max-width: 400px; */
 
     }
 
@@ -60,7 +60,7 @@
 
 @media (max-width: 475px){
     .image-slider-container{
-        max-width: 350px;
+        /* max-width: 350px; */
         height: 175px;
 
     }

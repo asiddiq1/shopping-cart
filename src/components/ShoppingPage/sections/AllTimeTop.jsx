@@ -6,7 +6,7 @@ import GridContent from "../helper/GridContent";
 function AllTimeTop(){
 
     const [page, setPage] = useState(1);
-    const { loading, error, games, hasMore } = useFetchGames({page: page, ordering: true});
+    const { loading, error, games, hasMore } = useFetchGames({page: page, ordering: "&ordering=-metacritic"});
     const handleScroll = () => {
       if (!loading && hasMore){
     

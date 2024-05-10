@@ -25,7 +25,7 @@ function useFetchGames({startDate, endDate, ordering, page}) {
         }
     
         if (ordering){
-            res += "&ordering=-rating"
+            res += ordering;
         }
         
         if (page){

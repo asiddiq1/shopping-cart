@@ -13,7 +13,7 @@ function BestofYear(){
     }
 
     const [page, setPage] = useState(1);
-    const { loading, error, games, hasMore } = useFetchGames({startDate: dateList()[0], endDate: dateList()[1], page: page, ordering: true});
+    const { loading, error, games, hasMore } = useFetchGames({startDate: dateList()[0], endDate: dateList()[1], page: page, ordering: "&ordering=-popularity"});
     const handleScroll = () => {
       if (!loading && hasMore){
     

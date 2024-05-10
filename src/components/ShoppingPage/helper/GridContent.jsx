@@ -22,15 +22,10 @@ function GridContent({loading, error, games, page, title, hasMore}){
                     gamePrice={game.price} gamePlatforms={game.platforms}/></Link>) 
                 ))}
                 {loading && hasMore && <div className='loading'><div className='loader'></div></div>}
-                
+                {!loading && !hasMore && games.length == 0 && <div>No games found for {title}</div>}
             </div>
         </div>
     );
-
-
-
-
 }
-
 
 export default GridContent;
