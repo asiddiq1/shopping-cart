@@ -29,10 +29,12 @@
 
 .game-images{
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     overscroll-behavior-x: none;
     transition: scroll 0.5s ease-in-out;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
     
 }
 
@@ -76,5 +78,7 @@
 
 }
 
-
+.game-images::webkit-scrollbar{
+    display:none
+} 
 
